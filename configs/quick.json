@@ -1,0 +1,10 @@
+{
+  "_comment": "Quick test (python -m risuav quick): one table, unit tests, a 1-epoch smoke training, re-evaluation of two test missions with the published checkpoint (compared with the published results), and all main figures from the published results. The smoke training uses test city 21 for both training and validation; it only checks that training runs.",
+  "platforms": ["facade"],
+  "seeds": [0],
+  "train_cities": [21],
+  "test_cities": [21],
+  "train": {"epochs": 1, "steps_per_epoch": 2, "batch": 4, "train_model": "serving"},
+  "evaluate": {"missions": "0-1", "n_ils": 100, "checkpoint": "best",
+               "methods": ["proposed", "none", "random", "coverage"]}
+}

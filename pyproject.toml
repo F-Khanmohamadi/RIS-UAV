@@ -1,0 +1,17 @@
+[project]
+name = "risuav"
+version = "1.0.0"
+description = "Collaborative RIS-assisted logistics UAV in cellular networks: simulation, learning-based planning, evaluation"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = ["numpy==2.5.3", "scipy==1.18.1", "pandas==3.0.5", "matplotlib==3.11.2", "openpyxl==3.1.5", "elkai==2.0.1", "torch==2.15.0"]
+
+[project.scripts]
+risuav = "risuav.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["risuav*"]
