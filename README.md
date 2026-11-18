@@ -2,9 +2,6 @@
 
 Implementation, trained models and raw results of the paper
 
-> F. Khanmohammadi, S. Iranmanesh, R. Raad, F. Tubbal, and M. Sharifi Sani, "Joint RIS Placement and UAV Mission
-> Planning for Energy-Efficient Logistics-Assisted Cellular Offloading," submitted to an IEEE Transactions journal.
-
 A rotary-wing UAV delivers a parcel and, on its way, collects the excess uplink traffic of congested cells. Each cell
 can be assisted by a reconfigurable intelligent surface (RIS), mounted either on a building facade or on a parked
 ground vehicle (ground-mobile RIS). The planner selects the RIS site and the hovering point of every cell, groups
