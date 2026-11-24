@@ -135,9 +135,9 @@ def build(src, dst, check=False, ncheck=40):
 if __name__ == '__main__':
     if '--check-original' in sys.argv:
         r = build(sys.argv[1], None, check=True)
-        print('reproduction of the original interpolated tables (first 40 cells):  max relative tau difference',
+        print('reproduction of the interpolated base tables (first 40 cells):  max relative tau difference',
               max(x['max_rel'] for x in r))
-        print('cells x options x points where exact feasibility differs from the original table:', sum(x['n_feas_diff'] for x in r))
+        print('cells x options x points where exact feasibility differs from the interpolated table:', sum(x['n_feas_diff'] for x in r))
     else:
         os.makedirs(os.path.dirname(os.path.abspath(sys.argv[2])), exist_ok=True)
         build(sys.argv[1], sys.argv[2])
