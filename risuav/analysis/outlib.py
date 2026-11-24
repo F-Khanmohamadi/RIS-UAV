@@ -1,5 +1,3 @@
-"""NEW (audit). Shared helpers: per-seed aggregation, paired statistics, and writers for every experiment output
-(PNG + SVG + EPS figure, Excel workbook with the data table and a native chart on the same sheet, CSV, IEEE LaTeX table)."""
 import os, numpy as np, pandas as pd
 import matplotlib; matplotlib.use('Agg'); import matplotlib.pyplot as plt
 from scipy.stats import wilcoxon
