@@ -27,4 +27,4 @@ Parameter sensitivity of Section V (Table `tab:sensitivity`): `<platform>_s0_bes
 missions k = 0-19 of both test cities (40 missions per platform), evaluated with the seed-0 checkpoint trained at the
 reference values (no retraining). N16/N24/N40: RIS with 16x16, 24x24, 40x40 elements (service tables rebuilt);
 D10/D20/D80: backlog of 10, 20, 80 Mbit per GUE. The reference point (N = 32x32, D = 40 Mbit) is taken from
-`results/main/` (seed 0, same 40 missions). Produced on 17 Nov 2026.
+`results/main/` (seed 0, same 40 missions). 
