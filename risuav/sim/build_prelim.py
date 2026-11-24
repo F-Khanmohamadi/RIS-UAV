@@ -1,6 +1,4 @@
-"""Rebuild the original preliminary city files (geometry, GUEs, candidate RIS sites, hovering lattice, interpolated
-tables) from the city seed, exactly as the notebook/preliminary builder: P = REF, ris_mode = platform, D_g = 1, pitch 25 m.
-usage: build_prelim.py <facade|ground> <city id>"""
+
 import sys, os, pickle, time, numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from physics import REF, build_city
