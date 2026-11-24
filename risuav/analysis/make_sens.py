@@ -1,9 +1,3 @@
-"""NEW (audit). Parameter sensitivity outputs from the exported CSVs (fixed seed-0 policy; 40 paired missions:
-k = 0..19 of both test layouts; the reference point is taken from the main evaluation on the same missions).
-usage: make_sens.py <exported csv dir> <out dir>
-Per parameter: figure (UAV energy of each method + saving of the proposed method vs No RIS and vs Coverage, with 95%
-bootstrap CIs), Excel workbook (one sheet per platform), CSV and LaTeX table. Retrained-policy points are reported next
-to the fixed-policy points."""
 import os, sys, glob, numpy as np, pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from outlib import *
