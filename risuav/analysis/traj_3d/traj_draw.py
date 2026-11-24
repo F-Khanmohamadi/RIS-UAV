@@ -480,7 +480,7 @@ def fig_platform_zoomA(plat):
 def fig_platform_plus_zoomA(plat, eh=2.75, box=True):
     F0 = plt.figure(figsize=(7.16, 7.2 + eh))
     top, bot = F0.subfigures(2, 1, height_ratios=[7.2, eh], hspace=0, wspace=0)
-    axs, Ds = fig_platform(plat, f=top)                      # identical to the approved figure (same code, same inch geometry)
+    axs, Ds = fig_platform(plat, f=top)                      
     xa, ya = ZOOM[plat]['A']
     az = bot.add_axes([0.12, 0.10, 0.76, 0.98], projection='3d'); setup(az, xa, ya, elev=28, azim=-60, zoom=1.12, zr=0.5)
     az.patch.set_visible(False)
