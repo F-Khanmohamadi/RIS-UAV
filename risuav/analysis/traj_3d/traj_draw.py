@@ -1,9 +1,3 @@
-"""3D trajectory figures (drawing code of the submitted figures, with the approved changes: legend 'Shared UAV hovering
-point', panel titles only). One 2 x 2 figure per platform (No RIS, Random RIS, Coverage-based RIS, Proposed).
-Inputs are given by risuav/analysis/traj_figs.py through environment variables (no machine-specific paths):
-  TRAJ_PLANS   saved plans converted to the drawing format (json)     TRAJ_ROWS  per-mission result rows of this mission (csv)
-  TRAJ_TABLES  directory of the exact tables (<city>.pkl, g<city>.pkl) TRAJ_OUT   output directory
-  TRAJ_PRELIM, TRAJ_CITY, TRAJ_K: see mission.py. UAV altitude is the model's fixed H = 120 m."""
 import json, pickle, sys, os, numpy as np, pandas as pd, matplotlib
 matplotlib.use('Agg'); import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
