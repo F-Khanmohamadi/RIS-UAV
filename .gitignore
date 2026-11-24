@@ -1,0 +1,11 @@
+work/
+outputs/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.tmp
+*.egg-info/
+.DS_Store
+Thumbs.db
+.idea/
