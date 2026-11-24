@@ -1,9 +1,3 @@
-"""Trajectory figures (fig:traj_facade, fig:traj_ground) from the SAVED plans of the evaluation (no reconstruction).
-The plans (stops, members (cell, RIS option, lattice point), visiting order) are written by eval_rx.py; per-cell
-service times are re-evaluated with the coupled model under each plan's full deployment and checked against the saved
-service time. Drawing code: traj_3d/traj_draw.py (the code of the submitted figures with the approved changes).
-usage: traj_figs.py <per_mission_main.csv> <plans_main.jsonl> <seed> <city> <k> <out dir>
-env:   MR_ROOT, PRELIM_ROOT (see risuav/sim/rx_paths.py): exact and preliminary tables of <city> and g<city>"""
 import os, sys, json, numpy as np, pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', 'sim'))
