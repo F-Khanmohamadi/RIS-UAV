@@ -1,0 +1,13 @@
+{
+  "seed": 0,
+  "missions": "0-19",
+  "methods": ["proposed", "none", "random", "coverage"],
+  "parameters": {
+    "N": {"label": "RIS elements N (side)", "points": {"N16": {"override": {"ris_n": 16}}, "N24": {"override": {"ris_n": 24}}, "N40": {"override": {"ris_n": 40}}}},
+    "D": {"label": "Backlog per GUE (Mbit)", "points": {"D10": {"env": {"D_SCALE": 0.25}}, "D20": {"env": {"D_SCALE": 0.5}}, "D80": {"env": {"D_SCALE": 2.0}}}}
+  },
+  "retrain": {
+    "N16": {"override": {"ris_n": 16}, "train_tables": "N16"},
+    "D80": {"env": {"D_SCALE": 2.0}}
+  }
+}

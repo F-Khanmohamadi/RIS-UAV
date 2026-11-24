@@ -1,0 +1,9 @@
+{
+  "platforms": ["facade"],
+  "seeds": [0],
+  "train_cities": [21],
+  "test_cities": [21],
+  "train": {"epochs": 1, "steps_per_epoch": 2, "batch": 4, "train_model": "serving"},
+  "evaluate": {"missions": "0-1", "n_ils": 100, "checkpoint": "best",
+               "methods": ["proposed", "none", "random", "coverage"]}
+}
