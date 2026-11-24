@@ -1,7 +1,4 @@
-"""Fig. energy_breakdown as Excel (style of the Fig. 3 workbook): one sheet with the data table and two
-native stacked-column charts, (a) Facade RIS and (b) Ground-mobile RIS: flight, hovering and communication energy of the
-four methods (mean over the 120 test missions and three seeds), total on top of each bar.
-usage: make_breakdown_excel.py <energy_breakdown.csv> <out.xlsx>"""
+
 import os, re, sys, zipfile, numpy as np, pandas as pd
 from openpyxl import Workbook, load_workbook
 from openpyxl.chart import LineChart, Reference
