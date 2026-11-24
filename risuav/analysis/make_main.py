@@ -1,8 +1,3 @@
-"""NEW (audit). Every main-result figure and table of the manuscript (and the additional metrics requested) from the
-exported per-mission CSV and the training logs. No simulation is run.
-usage: make_main.py <per_mission_main.csv> <runs dir> <out dir> [tag=proposed]
-For every experiment: <name>.png/.svg/.eps (one file per platform where the manuscript has subfigures),
-<name>.xlsx (data + native chart on one sheet per platform), <name>.csv (summary), <name>.tex (IEEE table)."""
 import os, sys, json, glob, numpy as np, pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from outlib import *
