@@ -58,7 +58,7 @@ CH = {}
 for k, (plat, (cc, rr), lab) in enumerate(zip(PLAT, (('A', 13), ('L', 13)), ('(a) Facade RIS', '(b) Ground-mobile RIS'))):
     ws[f'{cc}{rr - 1}'] = lab; ws[f'{cc}{rr - 1}'].font = Font(name=FONT, bold=True, size=12)
     ser = [dict(name=name, col=colL(cols[(plat, m)]), vals=[a for a, _ in data[(plat, m)]], color=colr, marker=mk)
-           for m, name, colr, mk in METH]                    # no error bars (authors' choice); std stays in the table
+           for m, name, colr, mk in METH]                    
     CH[k] = chart_xml(SHEET, BINS, r0, r1, ser, YT, 'Number of Congested Cells I', lo, hi, STEP)
     ph = LineChart(); ws.cell(300 + k, 60, f'CH{k}')
     ph.add_data(Reference(ws, min_col=60, min_row=300 + k, max_row=300 + k)); ph.width, ph.height = 25, 23
