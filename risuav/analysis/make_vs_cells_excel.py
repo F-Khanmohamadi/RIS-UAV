@@ -1,8 +1,3 @@
-"""NEW (18 Nov). Excel version of a 'metric versus number of congested cells' figure (e.g. Fig. energy_vs_cells), in the
-style of the authors' Fig. 3 workbook: one sheet with the data table and two native charts, (a) Facade RIS and
-(b) Ground-mobile RIS, same y-axis range. Points: mean over the test missions of each interval and the three training seeds
-(no error bars; the standard deviation across the seeds is listed in the table).
-usage: make_vs_cells_excel.py <vs_cells_all_metrics.csv> <metric> <y title> <y step> <out.xlsx>"""
 import os, re, sys, zipfile, numpy as np, pandas as pd
 from openpyxl import Workbook, load_workbook
 from openpyxl.chart import LineChart, Reference
