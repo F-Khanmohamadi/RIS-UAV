@@ -477,7 +477,6 @@ def fig_platform_zoomA(plat):
     f.savefig(base + '.svg'); f.savefig(base + '.eps'); f.savefig(base + '.png', dpi=600); plt.close(f)
 
 
-# ---------------------------------------------------------------- approved 2 x 2 figure, unchanged, with (e) Zoom A of (d) added underneath
 def fig_platform_plus_zoomA(plat, eh=2.75, box=True):
     F0 = plt.figure(figsize=(7.16, 7.2 + eh))
     top, bot = F0.subfigures(2, 1, height_ratios=[7.2, eh], hspace=0, wspace=0)
