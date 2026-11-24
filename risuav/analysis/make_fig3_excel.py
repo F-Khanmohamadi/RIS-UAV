@@ -1,11 +1,4 @@
-"""NEW (18 Nov). Fig. 3 (training) as Excel in the authors' layout. The authors' workbook (templates/fig3_training_template.xlsx)
-(values removed) is used as the template: its two charts, fonts, colours, legend, axes, column widths and positions are kept unchanged.
-Only these are replaced: the values in B5:I55 (mean and std per epoch) and the chart-helper columns Z5:AM55, the note in A2,
-the y-axis title ("UAV Energy (kJ)"), the y-axis maximum, and in Fig. 3(b) the legend (copied from
-Fig. 3(a)) and the series names (Training, Validation) (the template's 230 kJ would cut the curves at epochs 0-2).
-Training cost has no value at epoch 0: the cell holds =NA() (Excel draws an empty cell as 0 in a line+area chart) and is
-shown blank by a conditional format. The cached chart values are rebuilt from the new cells (as Excel itself stores them).
-usage: make_fig3_excel.py <training_per_seed.csv> <template.xlsx> <out.xlsx>"""
+
 import os, re, sys, zipfile
 import numpy as np, pandas as pd
 from xml.sax.saxutils import escape
