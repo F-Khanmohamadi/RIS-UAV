@@ -1,5 +1,4 @@
-"""NEW (18 Nov). Native Excel line charts in the style of the authors' Fig. 3 workbook (Times New Roman 24 pt bold, grey axes,
-light horizontal gridlines, boxed legend at the top, markers, custom error bars, cached values for Excel 2007)."""
+
 import numpy as np
 from xml.sax.saxutils import escape
 
