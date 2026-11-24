@@ -1,14 +1,4 @@
-"""Rebuild the service tables of an original preliminary city with the exact per-attempt PRR (revised experiment).
-Geometry, GUEs, candidate RIS sites and the hovering lattice are taken unchanged from the original city file, so
-original and revised experiments use matched instances. Differences to the original tables:
-  * PRR from the exact noncentral chi-square tail (scipy.stats.ncx2.sf) instead of the interpolated FadingTables
-    (whose error reached 0.33 near the 0.9 threshold for large Rician factors);
-  * the highest CQI with PRR >= PRR_min is found by an exact monotone search (PRR decreases with the CQI threshold);
-  * stored in addition (for the multi-RIS coupling engine): direct-link LoS masks (GUE x point), panel-to-point
-    LoS masks of every candidate site, and the per-point decision margin
-        margin[o, q] = min_k min( PRR_k(j_k) - PRR_min , PRR_min - PRR_k(j_k + 1) )   (feasible points),
-    i.e. how far the nearest GUE is from changing its CQI or feasibility.
-usage: build_exact.py <original city pkl> <output pkl> [--check-original]"""
+
 import sys, os, pickle, time, numpy as np
 from scipy.stats import ncx2
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
