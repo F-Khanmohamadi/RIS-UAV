@@ -1,9 +1,3 @@
-"""NEW (18 Nov). Sensitivity figures (N and D) as Excel, in the style of the authors' Fig. 3 workbook (Times New Roman 24 pt
-bold, grey axes, light horizontal gridlines, boxed legend at the top, native editable charts). One sheet per parameter with
-the data table and four charts laid out as the SVG figure: (a) Facade energy, (b) Ground-mobile energy, (c) Facade saving,
-(d) Ground-mobile saving. Energy error bars: 95% CI of the mean over the 40 missions; saving error bars: bootstrap 95% CI.
-Chart XML is written directly (cached values included, one series index per series), as Excel 2007 needs.
-usage: make_sens_excel.py <sensitivity csv dir> <out.xlsx>"""
 import os, re, sys, zipfile, numpy as np, pandas as pd
 from xml.sax.saxutils import escape
 from openpyxl import Workbook
