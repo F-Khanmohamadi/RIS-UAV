@@ -1,5 +1,4 @@
-"""NEW (audit). Export of the new evaluation results (eval_rx.py jsonl) to long per-mission CSV files.
-Same column names as the earlier export (analysis/manuscript_figures/export/export_results.py) plus a 'method' key.
+"""Export of the evaluation results (eval_rx.py jsonl) to long per-mission CSV files (one row per mission and method).
 No simulation is run.  usage: export_rx.py <results root> <out dir>
 Writes <out>/per_mission_<tag>.csv for every results/<tag>/ folder found, and <out>/plans_<tag>.jsonl (saved plans)."""
 import os, sys, json, glob, numpy as np, pandas as pd
