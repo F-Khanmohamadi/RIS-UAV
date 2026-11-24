@@ -1,6 +1,4 @@
-# Published artifacts
 
-Produced on 17 Nov 2026 by the code of this repository (Linux, CPU, Python 3.13, packages of `requirements.txt`).
 
 ## checkpoints/
 
@@ -21,8 +19,7 @@ members = (cell, RIS option, lattice point), deployed panels) and every metric (
 throughput, delay, PRR, CQI histogram, GUE energy, constraint checks, run time). `python -m risuav figures` turns
 these files into every figure and table; `python -m risuav verify` re-runs missions and compares them with these files.
 
-The runs also evaluated variants that are not part of the manuscript (a per-cell coverage rule and two policy-only
-variants). Their entries were removed from these files; the four methods are unchanged.
+
 
 ## results/sens_N16, sens_N24, sens_N40, sens_D10, sens_D20, sens_D80/
 
