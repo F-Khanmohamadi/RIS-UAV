@@ -35,10 +35,10 @@ def service_exact(mu2, s2):
     shp = mu2.shape; mu2 = mu2.ravel(); s2 = s2.ravel(); n = len(mu2)
     p1 = prr_exact(mu2, s2, np.zeros(n, int))
     has = p1 >= P['prr_min']
-    lo = np.zeros(n, int); hi = np.full(n, NJ - 1)                      # invariant: PRR(lo) >= target (where has)
+    lo = np.zeros(n, int); hi = np.full(n, NJ - 1)                      
     ptop = prr_exact(mu2, s2, hi); top = has & (ptop >= P['prr_min']); lo[top] = hi[top]
     act = has & ~top
-    while act.any():                                                     # binary search on [lo, hi)
+    while act.any():                                                     
         mid = (lo + hi + 1) // 2
         pm = np.ones(n); pm[act] = prr_exact(mu2[act], s2[act], mid[act])
         ok = pm >= P['prr_min']
